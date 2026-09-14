@@ -19,9 +19,9 @@
     .insights{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.insight{border-left:4px solid var(--blue);background:#f7f9fc;border-radius:8px;padding:15px 16px}.insight strong{display:block;font-size:14px;margin-bottom:4px}.insight span{font-size:13px;color:#596275}.insight.warn{border-left-color:#ed9c24;background:#fff9ef}.insight.alert{border-left-color:#dc453a;background:#fff5f4}
     .actions{margin:0;padding-left:20px;font-size:14px}.actions li{margin:8px 0;padding-left:3px}.foot{margin-top:26px;padding-top:14px;border-top:1px solid var(--line);font-size:11.5px;color:#7d8594}.tag{font-size:11px;background:#edf2fa;color:#40516d;border-radius:5px;padding:3px 7px;font-weight:750}.up{color:#178055;font-weight:850}.down{color:#d13d36;font-weight:850}.verdict{padding:19px 22px;border:1px solid #bdd3fb;border-radius:14px;background:linear-gradient(120deg,#edf4ff,#f8fbff)}.verdict strong{display:block;color:#2158b6;font-size:21px;margin-bottom:5px}.verdict p{margin:0;font-size:14px}.chart-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.chart-box{border:1px solid var(--line);border-radius:14px;padding:19px}.chart-title{font-size:14px;font-weight:850;color:var(--navy);margin-bottom:14px}.compare-row{display:grid;grid-template-columns:72px 1fr 78px;align-items:center;gap:9px;margin:9px 0;font-size:12px}.compare-row .name{font-weight:750;color:#596275}.htrack{height:18px;border-radius:5px;background:#edf1f6;overflow:hidden}.hbar{height:100%;border-radius:5px;background:#a8b6ca}.hbar.now{background:linear-gradient(90deg,#3977e5,#2459b8)}.compare-row .num{text-align:right;font-weight:850}.legend{display:flex;gap:15px;margin-top:12px;color:#667085;font-size:11px}.legend i{display:inline-block;width:9px;height:9px;border-radius:2px;margin-right:5px;background:#a8b6ca}.legend .now i{background:#2c66cd}.branch-chart{display:grid;gap:11px}.branch-line{display:grid;grid-template-columns:92px 1fr 1fr;gap:8px;align-items:center;font-size:12px}.branch-line .store-name{font-weight:800}.mini{position:relative;height:17px;background:#eef1f5;border-radius:4px;overflow:hidden}.mini span{display:block;height:100%;border-radius:4px;background:#aab6c7}.mini.current span{background:#2d68d2}.mini b{position:absolute;right:5px;top:0;font-size:10px;line-height:17px;color:#26344c}.mini.current b{color:#fff}.rate-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.rate-card{border:1px solid var(--line);border-radius:12px;padding:14px}.rate-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px}.rate-head strong{font-size:14px}.rate-head b{font-size:18px;color:#245bbf}.rate-track{height:10px;background:#edf1f6;border-radius:10px;overflow:hidden}.rate-fill{height:100%;border-radius:10px;background:linear-gradient(90deg,#35a5c2,#2e68d5)}.rate-meta{display:flex;justify-content:space-between;margin-top:7px;color:#737d8e;font-size:11px}.rate-card.zero-rate{background:#fff7f6;border-color:#f2cfcb}.rate-card.zero-rate .rate-head b{color:#d9423a}.overall-rate{display:flex;align-items:center;gap:18px;margin-bottom:14px;padding:16px 18px;border-radius:12px;background:#edf4ff}.ring{width:86px;height:86px;border-radius:50%;background:conic-gradient(#2f68d8 0 31.3%,#dfe6f0 31.3% 100%);display:grid;place-items:center;flex:0 0 auto}.ring:after{content:"31.3%";width:62px;height:62px;border-radius:50%;background:#fff;display:grid;place-items:center;font-weight:850;color:#245bbf}.overall-rate strong{display:block;font-size:17px;color:var(--navy)}.overall-rate span{font-size:12px;color:#657084}
     @media(max-width:800px){.kpis,.insights,.grid2,.chart-grid{grid-template-columns:1fr 1fr}.rate-grid{grid-template-columns:1fr 1fr}.page{width:100%;margin:0;border-radius:0}header,main{padding-left:22px;padding-right:22px}}
-    @media(max-width:560px){.kpis,.insights,.grid2,.chart-grid,.rate-grid{grid-template-columns:1fr}.branch-line{grid-template-columns:75px 1fr 1fr}}
-    .table-scroll{width:100%;max-width:100%;overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y;border-radius:10px}.table-scroll table{margin:0}.scroll-hint{display:none;color:#667085;font-size:12px;margin:-5px 0 9px;text-align:right}
-    @media(max-width:800px){.table-scroll table{min-width:860px}.scroll-hint{display:block}.table-scroll{border:1px solid var(--line);border-radius:10px}.table-scroll th,.table-scroll td{white-space:nowrap}.table-scroll th:first-child,.table-scroll td:first-child{position:sticky;left:0;z-index:2;background:#fff;min-width:135px;box-shadow:5px 0 8px rgba(20,36,60,.06)}.table-scroll th:first-child{background:#f6f8fb;z-index:3}.table-scroll .total td:first-child{background:#f9fbff}}
+    @media(max-width:560px){.kpis,.insights,.grid2,.chart-grid,.rate-grid{grid-template-columns:1fr}.branch-line{grid-template-columns:75px 1fr 1fr}.title{font-size:25px;line-height:1.25}.subtitle{font-size:14px}.bars.seven{gap:7px}.bars.seven .bar{min-width:18px;width:72%}.bars.seven .barval,.bars.seven .barlabel{font-size:10px}}
+    .table-scroll{display:block;width:100%;max-width:100%;overflow-x:scroll;overflow-y:hidden;-webkit-overflow-scrolling:touch;touch-action:pan-x;overscroll-behavior-x:contain;border-radius:10px}.table-scroll table{margin:0}.scroll-hint{display:none;color:#667085;font-size:12px;margin:-5px 0 9px;text-align:right}
+    @media(max-width:800px){body{overflow-x:hidden}.panel{min-width:0}.table-scroll{max-width:calc(100vw - 44px)}.table-scroll table{width:860px;min-width:860px}.scroll-hint{display:block}.table-scroll{border:1px solid var(--line);border-radius:10px}.table-scroll th,.table-scroll td{white-space:nowrap}.table-scroll th:first-child,.table-scroll td:first-child{position:sticky;left:0;z-index:2;background:#fff;min-width:135px;box-shadow:5px 0 8px rgba(20,36,60,.06)}.table-scroll th:first-child{background:#f6f8fb;z-index:3}.table-scroll .total td:first-child{background:#f9fbff}}
     @media print{@page{size:A4 landscape;margin:8mm}body{background:#fff}.page{width:100%;margin:0;box-shadow:none;border-radius:0}header{padding:22px 30px}.title{font-size:25px}main{padding:20px 30px}.section{margin-top:18px}.card{padding:13px}.card .value{font-size:23px}.bars{height:155px}.foot{margin-top:15px}.table-scroll{overflow:visible}.table-scroll table{min-width:0}.scroll-hint{display:none}}
   </style>
 </head>
@@ -30,19 +30,49 @@
   <header>
     <div class="eyebrow">HANNAM SUPERMARKET · EVENT MONITORING</div>
     <div class="title">Back to School 생수 증정 이벤트 효과 분석</div>
-    <div class="subtitle">한남 양념육 5종 중 1개 구매 시 생수 증정 · 전주 동일 요일 대비 4일 실적</div>
-    <div class="badge">비교기간 2026. 8. 27.–8. 30. vs. 9. 3.–9. 6. &nbsp;|&nbsp; 행사기간 9. 3.–9. 9.</div>
+    <div class="subtitle">한남 양념육 5종 중 1개 구매 시 생수 증정 · 전주 동일 요일 대비 4일 효과 분석 · 행사 7일 최종 판매실적</div>
+    <div class="badge">효과 비교 2026. 8. 27.–8. 30. vs. 9. 3.–9. 6. &nbsp;|&nbsp; 행사 전체 9. 3.–9. 9.</div>
   </header>
   <main>
     <section class="section"><div class="verdict"><strong>판매 효과는 명확, 증정 운영 관리는 미흡</strong><p>대상 5종 판매수량은 <b>96개에서 208개로 116.7%</b>, 매출은 <b>$1,175.04에서 $2,349.92로 100.0%</b> 증가. 동일한 목–일 비교에서 실적이 약 2배 확대돼 구매 유인 효과가 뚜렷함. 반면 생수 POS 등록은 65병으로 대상상품 판매수량 대비 단순 31.3%에 그쳐 지점별 증정·등록 관리 보완 필요.</p></div></section>
     <section class="section"><div class="kpis">
-        <div class="card primary"><div class="label">이번 주 판매수량</div><div class="value">208개</div><div class="note">전주 96개 · +112개</div></div>
-        <div class="card"><div class="label">판매수량 증감률</div><div class="value">+116.7%</div><div class="note">전주 대비 2.17배</div></div>
-        <div class="card"><div class="label">이번 주 대상상품 매출</div><div class="value">$2,349.92</div><div class="note">전주 대비 +$1,174.88</div></div>
-        <div class="card"><div class="label">생수 POS 등록</div><div class="value">65병</div><div class="note">판매수량 대비 단순 31.3%</div></div>
+        <div class="card primary"><div class="label">행사 7일 판매수량</div><div class="value">323개</div><div class="note">9/3–9/9 전체 누계</div></div>
+        <div class="card"><div class="label">행사 7일 대상상품 매출</div><div class="value">$3,646.77</div><div class="note">일평균 $520.97</div></div>
+        <div class="card"><div class="label">동일 4일 수량 증감률</div><div class="value">+116.7%</div><div class="note">96개 → 208개 · 2.17배</div></div>
+        <div class="card"><div class="label">생수 POS 확인분</div><div class="value">65병</div><div class="note">9/3–9/6 자료 · 이후 미집계</div></div>
     </div></section>
 
-    <section class="section"><h2>핵심 성과 비교</h2><div class="chart-grid">
+    <section class="section"><h2>행사 7일 최종 판매실적</h2><div class="chart-grid">
+      <div class="chart-box"><div class="chart-title">일자별 대상상품 판매수량</div>
+        <div class="bars seven">
+          <div class="baritem"><div class="barval">48</div><div class="bar" style="height:75%"></div><div class="barlabel">9/3</div></div>
+          <div class="baritem"><div class="barval">54</div><div class="bar" style="height:84%"></div><div class="barlabel">9/4</div></div>
+          <div class="baritem"><div class="barval">64</div><div class="bar" style="height:100%"></div><div class="barlabel">9/5</div></div>
+          <div class="baritem"><div class="barval">42</div><div class="bar" style="height:66%"></div><div class="barlabel">9/6</div></div>
+          <div class="baritem"><div class="barval">48</div><div class="bar" style="height:75%"></div><div class="barlabel">9/7</div></div>
+          <div class="baritem"><div class="barval">41</div><div class="bar" style="height:64%"></div><div class="barlabel">9/8</div></div>
+          <div class="baritem"><div class="barval">26</div><div class="bar" style="height:41%"></div><div class="barlabel">9/9</div></div>
+        </div>
+      </div>
+      <div class="chart-box"><div class="chart-title">제품별 행사 7일 누계</div>
+        <div class="compare-row"><span class="name">소불고기</span><div class="htrack"><div class="hbar now" style="width:100%"></div></div><span class="num">97개</span></div>
+        <div class="compare-row"><span class="name">안동찜닭</span><div class="htrack"><div class="hbar now" style="width:30.9%"></div></div><span class="num">30개</span></div>
+        <div class="compare-row"><span class="name">돼지갈비</span><div class="htrack"><div class="hbar now" style="width:48.5%"></div></div><span class="num">47개</span></div>
+        <div class="compare-row"><span class="name">연탄불고기</span><div class="htrack"><div class="hbar now" style="width:87.6%"></div></div><span class="num">85개</span></div>
+        <div class="compare-row"><span class="name">춘천닭갈비</span><div class="htrack"><div class="hbar now" style="width:66%"></div></div><span class="num">64개</span></div>
+      </div>
+    </div>
+    <div class="scroll-hint">← 표를 좌우로 밀어 전체 항목 확인 →</div><div class="table-scroll"><table>
+      <thead><tr><th class="left">대상 제품</th><th>상품번호</th><th>7일 수량</th><th>7일 매출</th><th>수량 비중</th></tr></thead><tbody>
+      <tr><td class="left">뚝배기소불고기</td><td>2300000095</td><td><strong>97</strong></td><td>$1,163.03</td><td>30.0%</td></tr>
+      <tr><td class="left">안동찜닭</td><td>2300000096</td><td><strong>30</strong></td><td>$329.70</td><td>9.3%</td></tr>
+      <tr><td class="left">양념돼지갈비</td><td>2300000097</td><td><strong>47</strong></td><td>$516.53</td><td>14.6%</td></tr>
+      <tr><td class="left">연탄불고기</td><td>2300000098</td><td><strong>85</strong></td><td>$934.15</td><td>26.3%</td></tr>
+      <tr><td class="left">춘천닭갈비</td><td>2300000099</td><td><strong>64</strong></td><td>$703.36</td><td>19.8%</td></tr>
+      <tr class="total"><td class="left">합계</td><td>5종</td><td>323</td><td>$3,646.77</td><td>100%</td></tr>
+    </tbody></table></div></section>
+
+    <section class="section"><h2>핵심 성과 비교 <span class="tag">동일 4일 기준</span></h2><div class="chart-grid">
       <div class="chart-box"><div class="chart-title">판매수량 · 전주 대비 2.17배</div>
         <div class="compare-row"><span class="name">전주</span><div class="htrack"><div class="hbar" style="width:46.2%"></div></div><span class="num">96개</span></div>
         <div class="compare-row"><span class="name">이번 주</span><div class="htrack"><div class="hbar now" style="width:100%"></div></div><span class="num up">208개</span></div>
@@ -55,7 +85,7 @@
       </div>
     </div></section>
 
-    <section class="section"><h2>지점별 판매수량 비교</h2><div class="chart-box"><div class="branch-chart">
+    <section class="section"><h2>지점별 판매수량 비교 <span class="tag">동일 4일 기준</span></h2><div class="chart-box"><div class="branch-chart">
       <div class="branch-line"><span class="store-name">Burnaby</span><div class="mini"><span style="width:43.2%"></span><b>전주 51</b></div><div class="mini current"><span style="width:100%"></span><b>이번 주 118</b></div></div>
       <div class="branch-line"><span class="store-name">Surrey</span><div class="mini"><span style="width:5.9%"></span><b>전주 7</b></div><div class="mini current"><span style="width:27.1%"></span><b>이번 주 32</b></div></div>
       <div class="branch-line"><span class="store-name">Robson</span><div class="mini"><span style="width:7.6%"></span><b>전주 9</b></div><div class="mini current"><span style="width:5.9%"></span><b>이번 주 7</b></div></div>
@@ -64,7 +94,7 @@
       <div class="branch-line"><span class="store-name">Metrotown</span><div class="mini"><span style="width:22%"></span><b>전주 26</b></div><div class="mini current"><span style="width:13.6%"></span><b>이번 주 16</b></div></div>
     </div><div class="legend"><span><i></i>전주</span><span class="now"><i></i>이번 주</span><span>막대 기준: 전 지점 최고값 118개</span></div></div></section>
 
-    <section class="section"><h2>제품별 전주 대비</h2><div class="scroll-hint">← 표를 좌우로 밀어 전체 항목 확인 →</div><div class="table-scroll"><table>
+    <section class="section"><h2>제품별 전주 대비 <span class="tag">동일 4일 기준</span></h2><div class="scroll-hint">← 표를 좌우로 밀어 전체 항목 확인 →</div><div class="table-scroll"><table>
       <thead><tr><th class="left">대상 제품</th><th>전주 수량</th><th>이번 주 수량</th><th>수량 증감</th><th>전주 매출</th><th>이번 주 매출</th><th>매출 증감</th></tr></thead><tbody>
       <tr><td class="left">뚝배기소불고기</td><td>22</td><td>64</td><td class="up">+42 / +190.9%</td><td>$289.78</td><td>$767.36</td><td class="up">+$477.58 / +164.8%</td></tr>
       <tr><td class="left">안동찜닭</td><td>8</td><td>19</td><td class="up">+11 / +137.5%</td><td>$93.92</td><td>$208.81</td><td class="up">+$114.89 / +122.3%</td></tr>
@@ -74,7 +104,7 @@
       <tr class="total"><td class="left">5종 합계</td><td>96</td><td>208</td><td class="up">+112 / +116.7%</td><td>$1,175.04</td><td>$2,349.92</td><td class="up">+$1,174.88 / +100.0%</td></tr>
     </tbody></table></div></section>
 
-    <section class="section"><h2>지점별 5종 실적</h2><div class="scroll-hint">← 표를 좌우로 밀어 전체 항목 확인 →</div><div class="table-scroll"><table>
+    <section class="section"><h2>지점별 5종 실적 <span class="tag">동일 4일 기준</span></h2><div class="scroll-hint">← 표를 좌우로 밀어 전체 항목 확인 →</div><div class="table-scroll"><table>
       <thead><tr><th class="left">지점</th><th>전주 수량</th><th>이번 주 수량</th><th>수량 증감</th><th>전주 매출</th><th>이번 주 매출</th><th>매출 증감</th></tr></thead><tbody>
       <tr><td class="left">Burnaby</td><td>51</td><td>118</td><td class="up">+67 / +131.4%</td><td>$650.49</td><td>$1,333.82</td><td class="up">+$683.33 / +105.0%</td></tr>
       <tr><td class="left">Surrey</td><td>7</td><td>32</td><td class="up">+25 / +357.1%</td><td>$85.93</td><td>$361.68</td><td class="up">+$275.75 / +320.9%</td></tr>
@@ -85,8 +115,8 @@
       <tr class="total"><td class="left">전 지점</td><td>96</td><td>208</td><td class="up">+112 / +116.7%</td><td>$1,175.04</td><td>$2,349.92</td><td class="up">+$1,174.88 / +100.0%</td></tr>
     </tbody></table></div></section>
 
-    <section class="section"><h2>지점별 생수 증정 등록률</h2>
-      <div class="overall-rate"><div class="ring"></div><div><strong>전체 단순 등록률 31.3%</strong><span>대상상품 208개 판매 대비 생수 POS 등록 65병. 실제 지급 후 미등록·고객 미수령·복수 구매가 혼재할 수 있는 관리지표.</span></div></div>
+    <section class="section"><h2>지점별 생수 증정 등록률 <span class="tag">9/3–9/6 확인분</span></h2>
+      <div class="overall-rate"><div class="ring"></div><div><strong>4일 확인분 단순 등록률 31.3%</strong><span>9/3–9/6 대상상품 208개 대비 생수 POS 65병. 9/7–9/9 생수 자료는 미집계이며, 실제 지급 후 미등록·고객 미수령·복수 구매가 혼재할 수 있는 참고지표.</span></div></div>
       <div class="rate-grid">
         <div class="rate-card"><div class="rate-head"><strong>Burnaby</strong><b>34.7%</b></div><div class="rate-track"><div class="rate-fill" style="width:34.7%"></div></div><div class="rate-meta"><span>대상상품 118개</span><span>생수 41병</span></div></div>
         <div class="rate-card"><div class="rate-head"><strong>Surrey</strong><b>53.1%</b></div><div class="rate-track"><div class="rate-fill" style="width:53.1%"></div></div><div class="rate-meta"><span>대상상품 32개</span><span>생수 17병</span></div></div>
@@ -99,7 +129,7 @@
 
     <section class="section grid2">
       <div class="panel">
-        <h2>일자별 증정 현황</h2>
+        <h2>일자별 증정 현황 <span class="tag">9/3–9/6</span></h2>
         <table>
           <thead><tr><th>일자</th><th>BBY</th><th>SRY</th><th>MET</th><th>기타 3개점</th><th>일계</th></tr></thead>
           <tbody>
@@ -112,7 +142,7 @@
         </table>
       </div>
       <div class="panel">
-        <h2>일별 추이</h2>
+        <h2>생수 등록 추이 <span class="tag">9/3–9/6</span></h2>
         <div class="bars">
           <div class="baritem"><div class="barval">23</div><div class="bar" style="height:100%"></div><div class="barlabel">9/3</div></div>
           <div class="baritem"><div class="barval">20</div><div class="bar" style="height:87%"></div><div class="barlabel">9/4</div></div>
@@ -123,7 +153,7 @@
     </section>
 
     <section class="section">
-      <h2>지점별 누계</h2>
+      <h2>지점별 생수 누계 <span class="tag">9/3–9/6</span></h2>
       <table>
         <thead><tr><th class="left">지점</th><th>누적 증정</th><th>전체 비중</th><th>일평균</th><th>POS 등록 상태</th></tr></thead>
         <tbody>
@@ -140,9 +170,9 @@
     <section class="section">
       <h2>종합 분석</h2>
       <div class="insights">
-        <div class="insight"><strong>프로모션 판매 효과 확인</strong><span>5종 전체 수량 +116.7%, 매출 +100.0%. 뚝배기소불고기가 증분 42개로 전체 증가분의 37.5%를 견인.</span></div>
+        <div class="insight"><strong>프로모션 판매 효과 확인</strong><span>동일 4일 기준 5종 수량 +116.7%, 매출 +100.0%. 행사 7일 전체는 323개·$3,646.77이며 뚝배기소불고기가 97개로 가장 많이 판매됨.</span></div>
         <div class="insight warn"><strong>지점별 편차</strong><span>버나비·써리·랭리는 큰 폭 증가한 반면 랍슨 -22.2%, 메트로타운 -38.5%. 재고·진열·안내 수준 점검 필요.</span></div>
-        <div class="insight alert"><strong>증정 통제 미흡</strong><span>대상상품 208개 대비 생수 등록 65병, 단순 등록률 31.3%. 랭리·랍슨·예일타운은 상품 판매가 있으나 생수 등록 0건.</span></div>
+        <div class="insight alert"><strong>증정 통제 미흡</strong><span>9/3–9/6 대상상품 208개 대비 생수 등록 65병, 단순 등록률 31.3%. 이후 3일은 생수 자료 미집계이므로 전체 행사 증정률로 해석할 수 없음.</span></div>
       </div>
     </section>
 
@@ -167,7 +197,7 @@
         </table>
       </div>
     </section>
-    <div class="foot">자료: 지점별 POS 조회 화면 · 대상 SKU 2300000095~2300000099 · 생수 Barcode 8800. 전주와 이번 주는 동일한 목–일 4일 비교. 단순 전주 비교이므로 가격, 재고, 진열 및 기타 판촉 요인의 영향을 완전히 분리한 인과효과 측정은 아님. 생수 등록률은 상품 판매수량 기준 참고치이며 정확한 증정률은 대상상품 포함 영수증 수로 산출 필요.</div>
+    <div class="foot">자료: 지점별 POS 조회 화면 · 대상 SKU 2300000095~2300000099 · 생수 Barcode 8800. 판매 누계는 행사 전체 9/3–9/9 기준이며, 효과 비교는 자료가 완비된 동일 목–일 4일 기준. 단순 전주 비교이므로 가격, 재고, 진열 및 기타 판촉 요인의 영향을 완전히 분리한 인과효과 측정은 아님. 생수 등록률은 9/3–9/6 상품 판매수량 기준 참고치이며, 9/7–9/9 생수 자료는 포함되지 않음. 정확한 증정률은 대상상품 포함 영수증 수로 산출 필요.</div>
   </main>
 </article>
 </body>
